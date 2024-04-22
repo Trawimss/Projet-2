@@ -169,6 +169,10 @@ input:-webkit-autofill:focus {
     font-size: 17px;
 }
 
+.bouton_rechercher_mobile{
+    display: none;
+}
+
 .bouton_rechercher_desktop_tablette:hover,
 .bouton_rechercher_desktop_tablette:focus,
 .bouton_rechercher_desktop_tablette:active {
@@ -510,24 +514,21 @@ h3 {
     overflow: hidden;
     box-shadow: 0 0 7px #c1c1c1;
 
-    .containerImage {
-        width: 100%;
-        height: calc(100% - 3rem);
-
-        img {
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
-        }
-    }
 }
 
+
+.containerImage img{
+    object-fit: cover;
+    height: 22rem;
+    width: 100%;
+
+}
 
 .description_activités {
     text-align: left;
     background-color: #fff;
     padding-left: .5rem;
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 700;
     height: 3rem;
     display: flex;
@@ -598,19 +599,9 @@ a {
 
     /* Main - corps de la page */
     /* Partie Recherche */
-    .bouton_rechercher_mobile {
-        background-color: #0065FC;
-        color: white;
-        border: none;
-        border-radius: 18px;
-        padding-left: 19px;
-        padding-right: 19px;
-        /* position relative et rigth 15px pour décaler le bouton "loupe" légèrement vers la gauche sur le champ de recherche */
-        position: relative;
-        right: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+   .bouton_rechercher_mobile{
+        display: none;
     }
 
     /* Dimensionnement de l'icône "loupe" */
@@ -717,6 +708,13 @@ a {
         object-fit: cover;
     }
 
+    .containerImage img{
+        object-fit: cover;
+        height: 10rem;
+        width: 100%;
+    
+    }
+
 }
 
 
@@ -783,14 +781,20 @@ a {
     }
 
     /* Affichage du bouton loupe pour mobile */
+
     .bouton_rechercher_mobile {
-        background-color:#0065FC;
+        background-color: #0065FC;
         color: white;
         border: none;
-        border-radius: 16px 16px 16px 16px;
+        border-radius: 18px;
         padding-left: 19px;
         padding-right: 19px;
+        /* position relative et rigth 15px pour décaler le bouton "loupe" légèrement vers la gauche sur le champ de recherche */
+        position: relative;
         right: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .bouton_rechercher_mobile:hover,
