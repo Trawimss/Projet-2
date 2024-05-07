@@ -35,6 +35,11 @@ li {
     list-style-type: none;
 }
 
+body {
+max-width: 1440px;
+margin: auto;
+}
+
 /* Entête du site contenant le logo et le menu de navigation */
 /* Logo */
 header {
@@ -594,6 +599,8 @@ a {
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
+
+
 
 @media screen and (max-width: 1024px) {
 
